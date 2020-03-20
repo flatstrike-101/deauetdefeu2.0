@@ -186,16 +186,15 @@ if = {
 }
 
 set_politics = {
-	ruling_party = repubulican
+	ruling_party = democratic
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 30
+	democratic = 100
 	fascism = 0
 	communism = 0
-	repubulican = 70
 }
 
 
@@ -204,7 +203,7 @@ create_country_leader = {
 	desc = "POLITICS_LAZARO_CARDENAS_DESC"
 	picture = "emiliano_leader_republic.dds"
 	expire = "1965.1.1"
-	ideology = radical_republican
+	ideology = conservatism
 	traits = {
 		#
 	}
@@ -229,17 +228,6 @@ create_country_leader = {
 	ideology = falangism
 	traits = {
 		fascist_militia_leader
-	}
-}
-
-create_country_leader = { # Exiled until 1935 following a rebellion attempt, allowed back in by Cardenas and joined the cabinet of Avila
-	name = "Adolfo de la Huerta"
-	desc = "POLITICS_ADOLFO_DE_LA_HUERTA_DESC"
-	picture = "GFX_Portrait_MEX_Adolfo_de_la_Huerta"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
 	}
 }
 

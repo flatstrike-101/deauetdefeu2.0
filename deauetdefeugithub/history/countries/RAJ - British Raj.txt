@@ -120,16 +120,15 @@ set_cosmetic_tag = RAJ_UK # British Raj
 
 
 set_politics = {
-	ruling_party = repubulican
+	ruling_party = democratic
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 9
+	democratic = 99
 	fascism = 0
 	communism = 1
-	repubulican = 90
 }
 
 create_country_leader = {
@@ -148,7 +147,7 @@ create_country_leader = {
 	desc = "POLITICS_LORD_LINLITHGOW_DESC"
 	picture = "portrait_ambedkar.dds"
 	expire = "1965.1.1"
-	ideology = radical_republican
+	ideology = conservatism
 	traits = {
 		
 	}
@@ -172,17 +171,6 @@ create_country_leader = {
 	picture = "GFX_RAJ_krishna_pillai"
 	expire = "1965.1.1"
 	ideology = marxism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "B. P. Sitaramayya"
-	desc = "POLITICS_B_P_SITARAMAYYA_DESC"
-	picture = "GFX_RAJ_pattabhi_sitaramayya"
-	expire = "1965.1.1"
-	ideology = socialism
 	traits = {
 		
 	}

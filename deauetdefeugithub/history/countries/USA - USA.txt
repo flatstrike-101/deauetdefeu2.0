@@ -272,16 +272,15 @@ set_convoys = 400
 
 
 set_politics = {
-	ruling_party = repubulican
+	ruling_party = democratic
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 50
+	democratic = 100
 	fascism = 0
 	communism = 0
-	repubulican = 50
 }
 
 add_ideas = {
@@ -326,22 +325,11 @@ set_autonomy = {
 }
 
 create_country_leader = {
-	name = "Franklin Delano Roosevelt"
-	desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
-	picture = "Portrait_USA_Franklin_Roosevelt.dds"
-	expire = "1947.1.1"
-	ideology = liberalism
-	traits = {
-		dislikes_germany
-	}
-}
-
-create_country_leader = {
 	name = "Herbert Hoover"
 	desc = "POLITICS_HERBERT_HOOVER_DESC"
 	picture = "herbert_hoover.dds"
 	expire = "1947.1.1"
-	ideology = progressive_republican
+	ideology = liberalism
 	traits = {
 		dislikes_germany
 	}
@@ -1265,12 +1253,11 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 65
+	democratic = 100
 	fascism = 0
 	communism = 0
 	strasserism = 0
 	national_socialism = 0
-	repubulican = 35
 }
 
 create_country_leader = {

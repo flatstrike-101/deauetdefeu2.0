@@ -259,14 +259,13 @@ if = {
 set_convoys = 50
 
 		set_popularities = {
-		democratic = 0.0
+		democratic = 80
 		communism = 20.0
 		fascism = 0.0
 		neutrality = 0.0
-		repubulican = 80.0
     }
 	set_politics = {
-		ruling_party = repubulican
+		ruling_party = democratic
 		last_election = "1936.1.1"
 		election_frequency = 48
 		elections_allowed = no
@@ -294,7 +293,7 @@ create_country_leader = {
 	desc = "POLITICS_ALEXANDER_KERENSKY_DESC"
 	picture = "alesander_kerensky_portrait.dds"
 	expire = "1953.3.1"
-	ideology = traditionalists_republican
+	ideology = conservatism
 	traits = {
 		
 	}
@@ -307,17 +306,6 @@ create_country_leader = {
 	picture = "Portrait_Soviet_Konstantin_Rodzaevsky.dds"
 	expire = "1953.3.1"
 	ideology = fascism_ideology
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Alexander Fyodorovich Kerensky"
-	desc = "POLITICS_ALEXANDER_FYODOROVICH_KERENSKY_DESC"
-	picture = "Portrait_Soviet_Generic_1.dds"
-	expire = "1953.3.1"
-	ideology = socialism
 	traits = {
 		
 	}
