@@ -1,0 +1,521 @@
+﻿    capital = 525
+
+	oob = "KOR_1936"
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		set_naval_oob = "KOR_1936_naval_mtg"
+		else = {
+			set_naval_oob = "KOR_2000_naval_legacy"
+		}
+	}
+	set_convoys = 100
+	
+	
+	set_variable = { var = debt value = 140 }
+	set_variable = { var = treasury value = 141 }
+	set_variable = { var = tax_rate value = 21 }
+	#initial_money_setup = yes
+	
+	set_global_flag = sell_KOR_IFV_4
+	clr_global_flag = sell_KOR_IFV_5
+	set_global_flag = sell_KOR_mbt_3
+	clr_global_flag = sell_KOR_mbt_5
+	
+	set_technology = {
+		legacy_doctrines = 1 
+		modern_blitzkrieg = 1 
+		forward_defense = 1 
+		encourage_nco_iniative = 1 
+		air_land_battle = 1
+		
+	
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1 #primary
+		infantry_weapons3 = 1
+		infantry_weapons4 = 1
+		
+		command_control_equipment = 1
+		command_control_equipment1 = 1
+		command_control_equipment2 = 1
+		command_control_equipment3 = 1
+		
+		combat_eng_equipment = 1
+	}
+		set_popularities = {
+		democratic = 35.0
+		communism = 0.0
+		fascism = 0.0
+		neutrality = 5.0
+		repubulican = 60.0
+    }
+	set_politics = {
+		ruling_party = repubulican
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	
+
+	create_country_leader = {
+		name = "Syngman Rhee"
+		picture = "syngmanrhee.dds"
+		ideology = liberalism
+		traits = {
+			
+		}
+	}
+
+	create_country_leader = {
+		name = "Syngman Rhee"
+		picture = "syngmanrhee.dds"
+		ideology = progressive_republican
+		traits = {
+			
+		}
+	}
+	
+	create_corps_commander = {
+		name = "Han Min-goo"
+		picture = "generals/Han_Min_Goo.dds"
+		id = 33000
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+	create_corps_commander = {
+		name = "Jeong Seung-jo"
+		picture = "generals/Jeong_Seung_Jo.dds"
+		id = 33001
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+	create_corps_commander = {
+		name = "Kim Kwan-jin"
+		picture = "generals/Kim_Kwan_Jin.dds"
+		id = 33002
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+	create_corps_commander = {
+		name = "Lee Sang-hoon"
+		picture = "generals/Lee_Sang_Hoon.dds"
+		id = 33003
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+	create_corps_commander = {
+		name = "Lee Soon-jin"
+		picture = "generals/Lee_Soon_Jin.dds"
+		id = 33004
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+
+	create_corps_commander = {
+		name = "Kim Yong-woo"
+		picture = "gen_Kim_Yong_Woo.dds"
+		traits = { }
+		id = 33005
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 3
+	}
+	create_corps_commander = {
+		name = "Lee Sun-jin"
+		picture = "gen_Lee_Sun_Jin.dds"
+		traits = {  }
+		id = 33006
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+	create_navy_leader = {
+		name = "Um Hyun-Seong"
+		picture = "adm_Um_Hyun_Seong.dds"
+		traits = { }
+		id = 33007
+	}
+	create_field_marshal = {
+		name = "Jang Jun-Kyu"
+		picture = "Portrait_Jang_Jun_Kyu.dds"
+		traits = { old_guard offensive_doctrine }
+		id = 33008
+		skill = 4
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 4
+	}
+
+	create_field_marshal = {
+		name = "Jeong Kyung-Doo"
+		picture = "Portrait_Jeong_Kyung_Doo.dds"
+		traits = { logistics_wizard }
+		id = 33009
+		skill = 4
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 4
+	}
+
+	create_field_marshal = {
+		name = "Park Chan-Ju"
+		picture = "Portrait_Park_Chan_Ju.dds"
+		traits = { thorough_planner }
+		id = 33010
+		skill = 4
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 4
+	}
+
+	create_field_marshal = {
+		name = "Chung Kyung-Seok"
+		picture = "Portrait_Chung_Kyung_Seok.dds"
+		traits = { fast_planner }
+		id = 33011
+		skill = 4
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 4
+	}
+
+	create_field_marshal = {
+		name = "Koo Hong-Moo"
+		picture = "Portrait_Koo_Hong_Moo.dds"
+		traits = { defensive_doctrine }
+		id = 33012
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 3
+	}
+
+	create_corps_commander = {
+		name = "Kim Seok-Jin"
+		picture = "Portrait_Kim_Seok_Jin.dds"
+		traits = {  }
+		id = 33013
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+
+	create_corps_commander = {
+		name = "Jo Jong-Seol"
+		picture = "Portrait_Jo_Jong_Seol.dds"
+		traits = { commando urban_assault_specialist }
+		id = 33014
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 3
+	}
+
+	create_corps_commander = {
+		name = "Kim Byung-Joo"
+		picture = "Portrait_Kim_Byung_Joo.dds"
+		traits = { trait_mountaineer }
+		id = 33015
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 3
+	}
+
+	create_corps_commander = {
+		name = "Han Gi-Ho"
+		picture = "Portrait_Han_Gi_Ho.dds"
+		traits = { fortress_buster }
+		id = 33016
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 3
+	}
+
+	create_corps_commander = {
+		name = "Lee Jung-Geun"
+		picture = "Portrait_Lee_Jung_Geun.dds"
+		traits = { trait_engineer }
+		id = 33017
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 3
+	}
+
+	create_corps_commander = {
+		name = "Yong Sung-Hwan"
+		picture = "Portrait_Yong_Sung_Hwan.dds"
+		traits = { ranger }
+		id = 33018
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Lee Jin-Seong"
+		picture = "Portrait_Lee_Jin_Seong.dds"
+		traits = { trickster }
+		id = 33019
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Kim Yeong-Sik"
+		picture = "Portrait_Kim_Jeong_Sik.dds"
+		traits = { panzer_leader ranger }
+		id = 33020
+		skill = 4
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 4
+	}
+
+	create_corps_commander = {
+		name = "Kim Un-Yeong"
+		picture = "Portrait_Kim_Un_Jeong.dds"
+		traits = { hill_fighter }
+		id = 33021
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 3
+	}
+
+	create_corps_commander = {
+		name = "Park Han-Ki"
+		picture = "Portrait_Park_Han_Ki.dds"
+		traits = { swamp_fox }
+		id = 33022
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 3
+	}
+
+	create_corps_commander = {
+		name = "Na Sang-Woong"
+		picture = "Portrait_Na_Sang_Woong.dds"
+		traits = { panzer_leader }
+		id = 33023
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 3
+	}
+
+	create_corps_commander = {
+		name = "Yom Gi-Hak"
+		picture = "Portrait_Yom_Gi_Hak.dds"
+		traits = { panzer_leader ranger }
+		id = 33024
+		skill = 4
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 4
+	}
+
+	create_corps_commander = {
+		name = " Kim Seon-Ho"
+		picture = "Portrait_Kim_Seon_Ho.dds"
+		traits = { ranger trickster }
+		id = 33025
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Chun Yung-Gu"
+		picture = "Portrait_Chun_Yung_Gu.dds"
+		traits = { commando naval_invader }
+		id = 33026
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 3
+	}
+
+	create_corps_commander = {
+		name = "Choi Chang-Ryong"
+		picture = "Portrait_Choi_Chang_Ryong.dds"
+		traits = { naval_invader trait_engineer }
+		id = 33027
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_navy_leader = {
+		name = "Jeong Jin-Seob"
+		picture = "Portrait_Jeong_Jin_Seob.dds"
+		traits = { ironside }
+		id = 33028
+	}
+
+	create_navy_leader = {
+		name = "Kim Chang-Kyu"
+		picture = "Portrait_Kim_Chang_Gyu.dds"
+		traits = { air_controller }
+		id = 33029
+	}
+
+	create_navy_leader = {
+		name = "Yoon Jeong-Sang"
+		picture = "Portrait_Yoon_Jeong_Sang.dds"
+		traits = { seawolf }
+		id = 33030
+	}
+	create_navy_leader = {
+		name = "Jung Ho-sub"
+		picture = "admirals/Jung_Ho_Sub.dds"
+		id = 33031
+	}
+	create_navy_leader = {
+		name = "Lee Ki-sik"
+		picture = "admirals/Lee_Ki_Sik.dds"
+		id = 33032
+	}
+
+	create_navy_leader = {
+		name = "Sim Seung-Seop"
+		picture = "Portrait_Sim_Seung_Seop.dds"
+		traits = { fly_swatter }
+		id = 33033
+	}
+
+	create_navy_leader = {
+		name = "Moon Byung-Ok"
+		picture = "Portrait_Moon_Byung_Ok.dds"
+		traits = { blockade_runner }
+		id = 33034
+	}
+
+	create_navy_leader = {
+		name = "Park Dong-Sun"
+		picture = "Portrait_Park_Dong_Sun.dds"
+		traits = { blockade_runner }
+		id = 33035
+	}
+
+	create_navy_leader = {
+		name = "Park Seong-Soo"
+		picture = "Portrait_Park_Seong_Soo.dds"
+		traits = { ironside }
+		id = 33036
+	}
+	#Aigeis enabled Frigate but KOR calls it a Destoryer
+	create_equipment_variant = {
+		name = "Gwanggaeto the Great"
+		type = missile_frigate_2
+		parent_version = 0
+		upgrades = {
+		}
+		obsolete = no
+	}
+
+}
+
+1939.1.1 = {
+	capital = 525
+	oob = "KOR_1939"
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		set_naval_oob = "KOR_1939_naval_mtg"
+		else = {
+			set_naval_oob = "KOR_1939_naval_legacy"
+		}
+	}
+	set_convoys = 100
+	}
+	set_popularities = {
+		democratic = 100.0
+		communism = 0.0
+		fascism = 0.0
+		neutrality = 0.0
+		nationalist = 0.0
+	}	
+	set_politics = {
+
+			
+
+
+		ruling_party = democratic
+		last_election = "1936.1.1"
+		election_frequency = 60
+		elections_allowed = no
+	}
+
+	create_equipment_variant = {
+		name = "KH-179"
+		type = artillery_1
+		upgrades = {
+		}
+	}
+	create_equipment_variant = {
+		name = "DW 3000F-Class"
+		type = missile_frigate_2
+		upgrades = {
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Makassar-Class"
+		type = LPD_2
+		upgrades = {
+		}
+	}
+
+}

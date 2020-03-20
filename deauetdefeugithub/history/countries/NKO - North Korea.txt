@@ -1,0 +1,259 @@
+﻿1936.1.1 = {
+	capital = 527
+	oob = "NKO_1936"
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		set_naval_oob = "NKO_1936_naval_mtg"
+		else = {
+			set_naval_oob = "NKO_1936_naval_legacy"
+		}
+	}
+	set_convoys = 20
+	
+	set_technology = { 
+		legacy_doctrines = 1 
+		infiltration_assault = 1 
+		frontline_defence = 1 
+		early_tunnel_warfare = 1 
+		massed_artillery = 1
+		
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+		
+		combat_eng_equipment = 1
+		night_vision_1 = 1
+		command_control_equipment = 1
+	}
+	set_popularities = {
+		democratic = 0.0
+		communism = 100.0
+		fascism = 0.0
+		neutrality = 0.0
+		nationalist = 0.0
+    }
+	set_politics = {
+		ruling_party = communism
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+	create_country_leader = {
+		name = "Kim Il-Sung"
+		picture = "portrait_kim_il_sung_nko.dds"
+		ideology = anarchist_communism
+		traits = {
+			
+		}
+	}
+	
+	create_corps_commander = {
+		name = "Ri Myong-su"
+			picture = "gen_Ri_Myong_Su.dds"
+		traits = {  }
+		id = 44101
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+	create_corps_commander = {
+		name = "Ri Yong-gil"
+			picture = "gen_Ri_Yong_Gil.dds"
+		traits = {  }
+		id = 44102
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+	create_navy_leader = {
+		name = "Yi Yong-ju"
+			picture = "adm_Yi_Yong_Ju.dds"
+		traits = {  }
+		id = 44103
+	}
+	create_corps_commander = {
+		name = "Hyon Yong Chol"
+		picture = "Portrait_Hyon_Yong_Chol.dds"
+		traits = {  }
+		id = 44104
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Cho Ryong Hae"
+		picture = "Portrait_Cho_Ryong_Hae.dds"
+		traits = {  }
+		id = 44105
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Choe Pu Il"
+		picture = "Portrait_Choe_Pu_Il.dds"
+		traits = {  }
+		id = 44106
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Hwang Pyong So"
+		picture = "Portrait_Hwang_Pyong_So.dds"
+		traits = {  }
+		id = 44107
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Jo Chun Ryong"
+		picture = "Portrait_Jo_Chun_Ryong.dds"
+		traits = {  }
+		id = 44108
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Kim Chun Sop"
+		picture = "Portrait_Kim_Chun_Sop.dds"
+		traits = {  }
+		id = 44109
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Jo Kyong Chol"
+		picture = "Portrait_Jo_Kyong_Chol.dds"
+		traits = {  }
+		id = 44110
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Kim Kyok Sik"
+		picture = "Portrait_Kim_Kyok_Sik.dds"
+		traits = {  }
+		id = 44111
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Kim Myong Kuk"
+		picture = "Portrait_Kim_Myong_Kuk.dds"
+		traits = {  }
+		id = 44112
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Kim Won Hong"
+		picture = "Portrait_Kim_Won_Hong.dds"
+		traits = {  }
+		id = 44113
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Kim Yong Chun"
+		picture = "Portrait_Kim_Yong_Chun.dds"
+		traits = {  }
+		id = 44114
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Pak Yong Sik"
+		picture = "Portrait_Pak_Yong_Sik.dds"
+		traits = {  }
+		id = 44115
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+}
+
+1939.1.1 = {
+	capital = 527
+	oob = "NKO_1936"
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		set_naval_oob = "NKO_1936_naval_mtg"
+		else = {
+			set_naval_oob = "NKO_1936_naval_legacy"
+		}
+	}
+		set_popularities = {
+		democratic = 0.0
+		communism = 100.0
+		fascism = 0.0
+		neutrality = 0.0
+		nationalist = 0.0
+    }
+	set_politics = {
+		ruling_party = communism
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+	create_country_leader = {
+		name = "Kim Il-Sung"
+		picture = "kim_il-sung.dds"
+		ideology = anarchist_communism
+		traits = {
+			
+		}
+	}
+	set_convoys = 10
