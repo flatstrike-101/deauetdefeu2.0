@@ -1,0 +1,31 @@
+
+state={
+	id=135
+	name="STATE_135"
+	manpower = 941400
+
+	state_category = town
+
+	history={
+		owner = WLS
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+		}
+		victory_points = {
+			7394 1 
+		}
+1960.1.1 = {
+owner = ENG
+			buildings = {
+				arms_factory = 3
+				industrial_complex = 4
+			}
+		}
+		add_core_of = WLS
+	}
+
+	provinces={
+		6289 6313 6405 7394 9284 9310 9405 11237 11267 11334 
+	}
+}
