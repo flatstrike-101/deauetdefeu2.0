@@ -50,6 +50,24 @@
 	}
 
 	create_country_leader = {
+		name = "William Dudley Pelley"
+		picture = "Portrait_USA_William_Dudley_Pelley.dds"
+		ideology = hitlerism
+		traits = {
+			
+		}
+	}
+
+	create_country_leader = {
+		name = "William Dudley Pelley"
+		picture = "Portrait_USA_William_Dudley_Pelley.dds"
+		ideology = strasserist_nazism
+		traits = {
+			
+		}
+	}
+
+	create_country_leader = {
 		name = "Sepp Dietrich"
 		picture = "Portrait_Germany_Josef_Dietrich.dds"
 		ideology = strasserist_nazism
