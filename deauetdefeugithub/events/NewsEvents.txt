@@ -23,8 +23,72 @@ country_event = {
 		name = news.345.a
 		}
 	}
+                          ##########( stalincivilwar )##############below
+news_event = {
+	id = news.348
+	title = news.348.t
+	desc = news.348.d
+	picture = GFX_news_event_001
 	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.348.a
+		SOV = {
+		create_country_leader = {
+			name = "Joseph Stalin"
+			desc = "POLITICS_MAO_ZEDONG_DESC"
+			picture = "Portrait_Soviet_Joseph_Stalin.dds"
+			expire = "1965.1.1"
+			ideology = dictatorship
+			traits = {
+			}
+	    }
+		start_civil_war = {
+				ruling_party = communism
+				ideology = socialism
+				size = 0.5
+				capital = 217
+				states = { 137 234 235 233 231 230 229 232 236 237 238 218 217 407 406 402 587 585 584 405 732 404 586 589 265 245 239 401 742 }
+			}
+		}
+		}
+	}
 
+	news_event = {
+	id = news.349
+	title = news.349.t
+	desc = news.349.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.349.a
+		SOV = {
+		create_country_leader = {
+			name = "Leon Trotsky"
+			desc = "POLITICS_MAO_ZEDONG_DESC"
+			picture = "Portrait_Leon_Trotsky.dds"
+			expire = "1965.1.1"
+			ideology = dictatorship
+			traits = {
+			}
+	    }
+		start_civil_war = {
+				ruling_party = communism
+				ideology = socialism
+				size = 0.5
+				capital = 137
+				states = { 137 234 235 233 231 230 229 232 236 237 238 218 217 407 406 402 587 585 584 405 732 404 586 589 265 245 239 401 742 }
+			}
+		}
+		}
+	}
 
 country_event = {
 	id = news.347
@@ -209,7 +273,33 @@ news_event = {
 		name = news.339.a
 		GPE = {
 		puppet = PRC
-		puppet = TEX
+		add_to_faction = TEX
+		}
+
+		TEX= {
+		set_politics = {
+	ruling_party = national_socialism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+		set_popularities = {
+	democratic = 0
+	fascism = 0
+	communism = 0
+	national_socialism = 1oo
+	repubulican = 0
+}
+transfer_state = 375
+transfer_state = 377
+transfer_state = 376
+transfer_state = 374
+transfer_state = 364
+transfer_state = 363
+transfer_state = 365
+transfer_state = 366
+
 		}
 
 		PRC = {
@@ -217,10 +307,6 @@ news_event = {
 		}
 
 		ENG = {
-		transfer_state = 363
-		transfer_state = 365
-		transfer_state = 365
-		transfer_state = 366
 		transfer_state = 122
 		transfer_state = 132
 		transfer_state = 128
@@ -230,14 +316,10 @@ news_event = {
 		transfer_state = 113
 		transfer_state = 134
 		transfer_state = 135
-		transfer_state = 364
 		}
 
 		AUS = {
-		transfer_state = 377
-		transfer_state = 376
-		transfer_state = 374
-		transfer_state = 375
+		transfer_state = 363
 		transfer_state = 330
 		transfer_state = 618
 		transfer_state = 760

@@ -7,11 +7,16 @@ country_event = {
 	picture = GFX_news_event_bose_meeting
 	
 	major = yes
+
+	trigger = {
+	date = 1942.1.9
+}
 	
 	is_triggered_only = no
 	
 	option = {
 		name = sov.1.a
+		news_event = news.348
 		SOV = {
 			hidden_effect {
 				create_country_leader = {
@@ -30,6 +35,7 @@ country_event = {
 
 	option = {
 		name = sov.1.b
+		news_event = news.349
 		SOV = {
 			hidden_effect {
 				create_country_leader = {

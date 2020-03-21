@@ -3216,19 +3216,20 @@
  prc.2.d:0 "Mongolia accepts our offer."
  prc.2.a:0 "Okay!"
 
+#USSR
+ 
+ sov.1.t:0 "The Death of Lenin"
+ sov.1.d:0 "Just minutes after proclaiming the Union of Soviet Socialist Republics, Lenin was hit by a fatal stroke, which poses the question, who will rule the  party now?"
+ sov.1.a:0 "Leon Trotsky"
+ sov.1.b:0 "Joseph Stalin"
+
+
 #mongolia
 
  mon.1.t:0 "China Invites Us To Their Faction"
  mon.1.d:0 "China the country we border, asks us to join th Greater Communist Empires"
  mon.1.a:0 "Sure"
  mon.1.b:0 "Nope"
- 
- #USSR
- 
- sov.1.t:0 "The Death of Lenin"
- sov.1.d:0 "Just minutes after proclaiming the Union of Soviet Socialist Republics, Lenin was hit by a fatal stroke, which poses the question, who will rule the  party now?"
- sov.1.a:0 "Leon Trotsky"
- sov.1.b:0 "Joseph Stalin"
 
  ####news
 
@@ -3266,3 +3267,9 @@
  prussia.6.t:0 "The Kaiser has a Meeting with the Chancellor"
  prussia.6.d:0 "The Kaiser sits in his office, looking out the window of castle Wilhelmspalais onto the streets of Württemberg, seeing city life in Germany again for some reason struck home, especially when a little kid walked by with his father or mother or parents, which reminded him of his child when he was young and reminded him of his grandchildren which he loved so dearly. Wilhelm heard loud, crunchy footsteps outside his door. “Komm herein!” he shouted so that the person outside could hear. He turned his head just as a child outside recognized him. Wilhelm couldn’t look outside for much longer anyhow, he was getting sentimental about Berlin. Wilhelm sat down in his black leather chair with fluffing inside just as Chancellor von Papen entered the room. “I am not to lie, your majesty, why have you brought me to your castle on such short notice? Has something appeared in my administration that I have grown too blind to see?” von Papen asked. “No, no, it’s not that. It’s more about the world,” Wilhelm responded. “World conquest!?” von Papen exclaimed. “No! Not that! I’m talking more about political-wise, trying to use current-day events to our advantage.” The kaiser said. “Oh, I see. You want to do what chancellor Bismarck did to unify Germany. What’s it called again? Realpolitik! Yeah! That’s the one.” von Papen answered."
  prussia.6.a:0 "The Discussion of German Hegemony Has not Ended it Seems"
+ news.348.t:0 "Stalin Starts a Civil War"
+ news.348.d:0 "Since Leon Trotsky was elected leader of the Soviet Union many Stalinists have been unhapppy, causing a civil war to start."
+ news.348.a:0 "What Will Trotsky Do About This?"
+ news.349.t:0 "Trotsky Starts a Civil War"
+ news.349.d:0 "Since Joseph Stalin was elected leader of the Soviet Union many Stalinists have been unhapppy, causing a civil war to start."
+ news.349.a:0 "What Will Stalin Do About This?"
