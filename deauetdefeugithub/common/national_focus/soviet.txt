@@ -75,7 +75,7 @@
 		mutually_exclusive = {
 			focus = SOV_ban_communism
 		}
-		x = -8
+		x = -2
 		y = 0
 		cost = 10
 
@@ -377,500 +377,189 @@
 			add_stability = 0.2
 		}
 	}
-	
 	focus = {
-		id = SOV_annex_tannu_tuva
-		icon = GFX_goal_generic_territory_or_war
-		prerequisite = {
-			focus = SOV_embrace_fascism
-			focus = SOV_hold_a_referendum
-		}
-		mutually_exclusive = {
-			
-		}
-		x = -2
-		y = 1
-		relative_position_id = SOV_embrace_fascism
-		cost = 10
-
-		available = {
-			country_exists = TAN
-		}
-
-		bypass = {
-		}
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			annex_country = {
-				target = TAN
-				transfer_troops = yes
-			}
-		}
-	}
-	focus = {
-		id = SOV_iranian_front
-		icon = GFX_goal_generic_construct_civilian
-		prerequisite = {
-			focus = SOV_embrace_fascism
-			focus = SOV_hold_a_referendum
-		}
-		mutually_exclusive = {
-			
-		}
-		x = -2
-		y = 0
-		relative_position_id = SOV_annex_tannu_tuva
-		cost = 10
-
-		available = {
-			country_exists = PER
-			owns_state = 584
-			controls_state = 584
-		}
-
-		bypass = {
-		}
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			584 {
-				add_building_construction = {
-					type = bunker
-					level = 3
-					instant_build = yes
-					province = {
-						id =	12359
-						id =	10510
-						id =	12333
-						id =	7491
-						id =	7560
-						id =	4958
-					}
-				}
-			}
-		}
-	}
-	focus = {
-		id = SOV_iranian_war
-		icon = GFX_goal_generic_construct_civilian
-		prerequisite = {
-			focus = SOV_iranian_front
-		}
-		mutually_exclusive = {
-			
-		}
-		x = 0
-		y = 1
-		relative_position_id = SOV_iranian_front
-		cost = 10
-
-		available = {
-			country_exists = PER
-		}
-
-		bypass = {
-		}
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = PER
-			}
-		}
-	}
-	focus = {
-		id = SOV_iranian_integration
-		icon = GFX_goal_generic_construct_civilian
-		prerequisite = {
-			focus = SOV_iranian_war
-		}
-		mutually_exclusive = {
-			
-		}
-		x = 0
-		y = 1
-		relative_position_id = SOV_iranian_war
-		cost = 20
-
-		available = {
-			owns_state = 413
-			owns_state = 412
-			owns_state = 410
-			owns_state = 414
-			owns_state = 411
-			owns_state = 417
-			owns_state = 421
-			owns_state = 416
-			owns_state = 418
-			owns_state = 266
-			owns_state = 420 # LoL Blaze it
-			owns_state = 419
-			controls_state = 413
-			controls_state = 412
-			controls_state = 410
-			controls_state = 414
-			controls_state = 411
-			controls_state = 417
-			controls_state = 421
-			controls_state = 416
-			controls_state = 418
-			controls_state = 266
-			controls_state = 420 # LoL Blaze it
-			controls_state = 419
-		}
-
-		bypass = {
-		}
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			add_state_core = 413
-			add_state_core = 412
-			add_state_core = 410
-			add_state_core = 414
-			add_state_core = 411
-			add_state_core = 417
-			add_state_core = 421
-			add_state_core = 416
-			add_state_core = 418
-			add_state_core = 266
-			add_state_core = 420 # LoL Blaze it
-			add_state_core = 419
-		}
-	}
-	focus = {
-		id = SOV_annex_latvia
-		icon = GFX_goal_generic_territory_or_war
-		prerequisite = {
-			focus = SOV_embrace_fascism
-			focus = SOV_hold_a_referendum
-		}
-		mutually_exclusive = {
-			
-		}
-		x = -2
-		y = 0
-		relative_position_id = SOV_iranian_front
-		cost = 10
-
-		available = {
-			country_exists = LAT
-		}
-
-		bypass = {
-		}
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			annex_country = {
-				target = LAT
-				transfer_troops = no
-			}
-		}
-	}
-	focus = {
-		id = SOV_annex_estonia
-		icon = GFX_goal_generic_territory_or_war
-		prerequisite = {
-			focus = SOV_annex_latvia
-		}
-		mutually_exclusive = {
-			
-		}
-		x = 0
-		y = 1
-		relative_position_id = SOV_annex_latvia
-		cost = 10
-
-		available = {
-			country_exists = EST
-		}
-
-		bypass = {
-		}
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			annex_country = {
-				target = EST
-				transfer_troops = no
-			}
-		}
-	}
-	focus = {
-		id = SOV_stalin_constitution
-		icon = GFX_goal_support_communism
+		id = SOV_new_constitution
+		icon = GFX_focus_generic_soviet_politics
 		prerequisite = {
 			focus = SOV_hold_a_referendum
+		}
+		mutually_exclusive = {
+			
 		}
 		x = 0
 		y = 1
 		relative_position_id = SOV_hold_a_referendum
 		cost = 10
-		ai_will_do = {
-			factor = 1
+
+		available = {
+			
 		}
 
-		available_if_capitulated = yes
+		bypass = {
+		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_political_power = 160
-			kill_country_leader = yes
-			create_country_leader = {
-				name = "Joseph Stalin"
-				desc = "POLITICS_JOSEPH_STALIN_DESC"
-				picture = "Portrait_Soviet_Joseph_Stalin.dds"
-				expire = "1953.3.1"
-				ideology = stalinism
-				traits = {
-					
-				}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			add_stability = 0.10
+		}
+	}
+	focus = {
+		id = SOV_social_and_economic_reform
+		icon = GFX_focus_prc_agrarian_socialism
+		prerequisite = {
+			focus = SOV_new_constitution
+		}
+		mutually_exclusive = {
+			
+		}
+		x = 0
+		y = 1
+		relative_position_id = SOV_new_constitution
+		cost = 10
+
+		available = {
+			
+		}
+
+		bypass = {
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = {
+				SOV_idea_social_and_economic_reform
+			}
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = SOV_red_terror
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = {
+			focus = SOV_social_and_economic_reform
+		}
+		mutually_exclusive = {
+			
+		}
+		x = -1
+		y = 1
+		relative_position_id = SOV_social_and_economic_reform
+		cost = 10
+
+		available = {
+			
+		}
+
+		bypass = {
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_popularity  = {
+				ideology = communism
+				popularity = 0.10
+			}
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = SOV_new_economic_policy
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = {
+			focus = SOV_social_and_economic_reform
+		}
+		mutually_exclusive = {
+			
+		}
+		x = 1
+		y = 1
+		relative_position_id = SOV_social_and_economic_reform
+		cost = 10
+
+		available = {
+			
+		}
+
+		bypass = {
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = {
+				SOV_idea_economic_reform
 			}
 		}
 	}
 	focus = {
-		id = SOV_collectivist_propaganda
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = SOV_stalin_constitution }
-		mutually_exclusive = { focus = SOV_positive_heroism }
-		x = -2
-		y = 1
-		relative_position_id = SOV_stalin_constitution
-		cost = 10
-		ai_will_do = {
-			factor = 0.25
+		id = SOV_international
+		icon = GFX_focus_generic_join_comintern
+		prerequisite = {
+			focus = SOV_new_economic_policy
 		}
-
-		available_if_capitulated = yes
-
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
-		completion_reward = {
-			add_political_power = 120
-			add_ideas = SOV_collectivist_propaganda
+		prerequisite = {
+			focus = SOV_red_terror
 		}
-	}
-	focus = {
-		id = SOV_militarized_schools
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = SOV_collectivist_propaganda }
+		mutually_exclusive = {
+			
+		}
 		x = 0
-		y = 1
-		relative_position_id = SOV_collectivist_propaganda
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		search_filters = { FOCUS_FILTER_MANPOWER }
-		completion_reward = {
-			add_ideas = militarized_schools
-		}
-	}
-	focus = {
-		id = SOV_workers_culture
-		icon = GFX_goal_generic_construction
-		prerequisite = { focus = SOV_militarized_schools }
-		x = 0
-		y = 1
-		relative_position_id = SOV_militarized_schools
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			add_ideas = workers_culture
-		}
-	}
-	focus = {
-		id = SOV_women_pilots
-		icon = GFX_goal_generic_CAS
-		prerequisite = { focus = SOV_workers_culture }
-		x = 0
-		y = 1
-		relative_position_id = SOV_workers_culture
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		search_filters = { FOCUS_FILTER_MANPOWER }
-		completion_reward = {
-			air_experience = 25
-			set_rule = {
-				can_generate_female_aces = yes
-			}
-			if = {
-				limit = {
-					SOV = { has_full_control_of_state = 219 }
-				}
-				custom_effect_tooltip = SOV_night_witches_tt
-				hidden_effect = {
-					load_oob = "SOV_night_witches"
-				}
-			}
-		}
-	}
-	focus = {
-		id = SOV_positive_heroism
-		icon = GFX_goal_generic_cavalry
-		prerequisite = { focus = SOV_stalin_constitution }
-		mutually_exclusive = { focus = SOV_collectivist_propaganda }
-		x = 0
-		y = 1
-		relative_position_id = SOV_stalin_constitution
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			custom_effect_tooltip = available_military_high_command
-			show_ideas_tooltip = konstantin_rokossovsky 
-			custom_effect_tooltip = available_theorist
-			show_ideas_tooltip = georgy_zhukov
-			# REVISIT Might want to add more
-		}
-	}
-	focus = {
-		id = SOV_progress_cult
-		icon = GFX_goal_generic_scientific_exchange
-		prerequisite = { focus = SOV_positive_heroism }
-		x = 0
-		y = 1
-		relative_position_id = SOV_positive_heroism
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			add_ideas = progress_cult_focus
-		}
-	}
-	focus = {
-		id = SOV_socialist_science
-		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = SOV_progress_cult }
-		x = 0
-		y = 1
-		relative_position_id = SOV_progress_cult
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			add_ideas = socialist_science_focus
-		}
-	}
-	focus = {
-		id = SOV_extra_tech_slot
-		icon = GFX_focus_research
-		text = extra_tech_slot
-		prerequisite = { focus = SOV_socialist_science }
-		x = 0
-		y = 1
-		relative_position_id = SOV_socialist_science
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
-	focus = {
-		id = SOV_aviation_cult
-		icon = GFX_goal_generic_air_doctrine
-		prerequisite = { focus = SOV_positive_heroism }
-		x = 2
 		y = 2
-		relative_position_id = SOV_positive_heroism
+		relative_position_id = SOV_social_and_economic_reform
 		cost = 10
-		ai_will_do = {
-			factor = 1
+
+		available = {
+			
 		}
 
-		available_if_capitulated = yes	
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			air_experience = 25
-
-			add_tech_bonus = {
-				name = air_bonus
-				bonus = 1.0
-				uses = 1
-				category = light_air
-				category = medium_air
-				category = heavy_air
-				category = naval_air
-			}
+		bypass = {
 		}
-	}
-	focus = {
-		id = SOV_new_soviet_man
-		icon = GFX_goal_support_communism
-		prerequisite = { focus = SOV_aviation_cult }
-		x = 0
-		y = 1
-		relative_position_id = SOV_aviation_cult
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			hidden_effect = {
-				set_rule = {
-					can_use_kamikaze_pilots = yes
-				}
-			}
-			custom_effect_tooltip = kamikaze_focus_tooltip
-		}
-	}
-	focus = {
-		id = SOV_socialist_realism
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = SOV_stalin_constitution }
-		x = 2
-		y = 1
-		relative_position_id = SOV_stalin_constitution
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_political_power = 120
+			every_neighbor_country = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.1
+				}
+			}
+		}
+	}
+	focus = {
+		id = SOV_ussr
+		icon = GFX_focus_ger_great_red_menace
+		prerequisite = {
+			focus = SOV_new_economic_policy
+		}
+		prerequisite = {
+			focus = SOV_international
+		}
+		mutually_exclusive = {
+			
+		}
+		x = 0
+		y = 1
+		relative_position_id = SOV_international
+		cost = 10
+
+		available = {
+			
+		}
+
+		bypass = {
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event	= {
+				id = sov.1
+				days = 0
+				random = 0
+			}
+			set_cosmetic_tag = SOV_ussr_communism
 		}
 	}
 	focus = {

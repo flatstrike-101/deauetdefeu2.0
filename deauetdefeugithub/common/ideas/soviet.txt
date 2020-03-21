@@ -669,6 +669,43 @@ ideas = {
 			}
 
 		}
+		
+		SOV_idea_social_and_economic_reform = {
+			removal_cost = -1
+			
+			picture = home_of_revolution
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+			
+		}
+		SOV_idea_economic_reform = {
+			removal_cost = -1
+			
+			picture = home_of_revolution
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+			
+		}
 	}
 
 
@@ -1876,6 +1913,7 @@ ideas = {
 			
 			traits = { rocket_scientist }
 		}
+		
 	}
 	
 }

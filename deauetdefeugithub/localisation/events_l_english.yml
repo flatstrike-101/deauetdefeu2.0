@@ -3222,6 +3222,13 @@
  mon.1.d:0 "China the country we border, asks us to join th Greater Communist Empires"
  mon.1.a:0 "Sure"
  mon.1.b:0 "Nope"
+ 
+ #USSR
+ 
+ sov.1.t:0 "The Death of Lenin"
+ sov.1.d:0 "Just minutes after proclaiming the Union of Soviet Socialist Republics, Lenin was hit by a fatal stroke, which poses the question, who will rule the  party now?"
+ sov.1.a:0 "Leon Trotsky"
+ sov.1.b:0 "Joseph Stalin"
 
  ####news
 

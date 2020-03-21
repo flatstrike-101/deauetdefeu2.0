@@ -754,3 +754,8 @@ AUS_GPE_fascism_DEF:0 "Dollfussreich"
 
 ENG_GPE_fascism:0 "Mosley's Realm"
 ENG_GPE_fascism_DEF:0 "Mosley's Realm"
+
+###USSR
+
+SOV_ussr_communism:0 "Soviet Union"
+SOV_ussr_communism_DEF:0 "Union of Soviet Socialist Republics"
