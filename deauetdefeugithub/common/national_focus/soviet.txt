@@ -91,7 +91,7 @@
 		completion_reward = {
 			set_politics = {
 				ruling_party = communism
-				elections_allowed = no
+				elections_allowed = yes
 			}
 		}
 	}
@@ -535,9 +535,6 @@
 		id = SOV_ussr
 		icon = GFX_focus_ger_great_red_menace
 		prerequisite = {
-			focus = SOV_new_economic_policy
-		}
-		prerequisite = {
 			focus = SOV_international
 		}
 		mutually_exclusive = {
@@ -557,10 +554,12 @@
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			country_event	= {
-				id = sov.1
-				days = 0
-				random = 0
+			hidden_effect = {
+				country_event	= {
+					id = sov.1
+					days = 0
+					random = 0
+				}
 			}
 			set_cosmetic_tag = SOV_ussr_communism
 		}

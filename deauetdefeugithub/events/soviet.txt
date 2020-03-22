@@ -5,18 +5,16 @@ country_event = {
 	title = sov.1.t
 	desc = sov.1.d
 	picture = GFX_news_event_bose_meeting
-	
-	major = yes
 
-	trigger = {
-	date = 1942.1.9
-}
-	
-	is_triggered_only = no
-	
+	major = no
+
+	is_triggered_only = yes
+
 	option = {
 		name = sov.1.a
-		news_event = news.348
+		news_event = {
+			id = news.348
+		}
 		SOV = {
 			hidden_effect {
 				create_country_leader = {
@@ -35,7 +33,9 @@ country_event = {
 
 	option = {
 		name = sov.1.b
-		news_event = news.349
+		news_event = {
+			id = news.349
+		}
 		SOV = {
 			hidden_effect {
 				create_country_leader = {
@@ -45,7 +45,7 @@ country_event = {
 					expire = "1953.3.1"
 					ideology = stalinism
 					traits = {
-						
+
 					}
 				}
 			}

@@ -24,69 +24,95 @@ country_event = {
 		}
 	}
                           ##########( stalincivilwar )##############below
-news_event = {
-	id = news.348
-	title = news.348.t
-	desc = news.348.d
-	picture = GFX_news_event_001
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = news.348.a
-		SOV = {
-		create_country_leader = {
-			name = "Joseph Stalin"
-			desc = "POLITICS_MAO_ZEDONG_DESC"
-			picture = "Portrait_Soviet_Joseph_Stalin.dds"
-			expire = "1965.1.1"
-			ideology = dictatorship
-			traits = {
-			}
-	    }
-		start_civil_war = {
-				ruling_party = communism
-				ideology = socialism
-				size = 0.5
-				capital = 217
-				states = { 137 234 235 233 231 230 229 232 236 237 238 218 217 407 406 402 587 585 584 405 732 404 586 589 265 245 239 401 742 }
+	news_event = {
+		id = news.348
+		title = news.348.t
+		desc = news.348.d
+		picture = GFX_news_event_001
+		
+		major = no
+		
+		is_triggered_only = yes
+		
+		immediate = {
+			hidden_effect = {
+				SOV = {
+					create_country_leader = {
+						name = "Joseph Stalin"
+						desc = "POLITICS_JOSEPH_STALIN_DESC"
+						picture = "Portrait_Soviet_Joseph_Stalin.dds"
+						expire = "1965.1.1"
+						ideology = stalinism
+						traits = {
+						}
+					}
+					start_civil_war = {
+						ruling_party = communism
+						ideology = socialism
+						size = 0.5
+					}
+					create_country_leader = {
+						name = "Leon Trotsky"
+						desc = "POLITICS_LEON_TROTSKY_DESC"
+						picture = "Portrait_Leon_Trotsky.dds"
+						expire = "1965.1.1"
+						ideology = leninism
+						traits = {
+						}
+					}
+					set_global_flag = SOV_government_revolution
+				}
 			}
 		}
+		
+		option = {
+			name = news.348.a
 		}
 	}
 
 	news_event = {
-	id = news.349
-	title = news.349.t
-	desc = news.349.d
-	picture = GFX_news_event_001
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = news.349.a
-		SOV = {
-		create_country_leader = {
-			name = "Leon Trotsky"
-			desc = "POLITICS_MAO_ZEDONG_DESC"
-			picture = "Portrait_Leon_Trotsky.dds"
-			expire = "1965.1.1"
-			ideology = dictatorship
-			traits = {
-			}
-	    }
-		start_civil_war = {
-				ruling_party = communism
-				ideology = socialism
-				size = 0.5
-				capital = 137
-				states = { 137 234 235 233 231 230 229 232 236 237 238 218 217 407 406 402 587 585 584 405 732 404 586 589 265 245 239 401 742 }
+		id = news.349
+		title = news.349.t
+		desc = news.349.d
+		picture = GFX_news_event_001
+		
+		major = no
+		
+		is_triggered_only = yes
+		
+		immediate = {
+			hidden_effect = {
+				SOV = {
+					create_country_leader = {
+						name = "Leon Trotsky"
+						desc = "POLITICS_LEON_TROTSKY_DESC"
+						picture = "Portrait_Leon_Trotsky.dds"
+						expire = "1965.1.1"
+						ideology = leninism
+						traits = {
+						}
+					}
+					start_civil_war = {
+						ruling_party = communism
+						ideology = communism
+						size = 0.5
+					}
+					create_country_leader = {
+						name = "Joseph Stalin"
+						desc = "POLITICS_JOSEPH_STALIN_DESC"
+						picture = "Portrait_Soviet_Joseph_Stalin.dds"
+						expire = "1965.1.1"
+						ideology = stalinism
+						traits = {
+						}
+					}
+					set_global_flag = SOV_government_revolution
+				}
 			}
 		}
+		
+		option = {
+			name = news.349.a
 		}
 	}
 
