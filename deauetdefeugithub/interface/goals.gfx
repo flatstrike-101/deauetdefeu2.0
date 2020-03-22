@@ -9,8 +9,18 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+		name = "GFX_kkk"
+		texturefile = "gfx/interface/goals/kkk.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_no_more_communism"
 		texturefile = "gfx/interface/goals/focus_ger_destroy_communism.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_promote_kkk"
+		texturefile = "gfx/interface/goals/focus_poromote_kkk.dds"
 	}
 
 	SpriteType = {
@@ -2180,11 +2190,6 @@ SpriteType = {
 	SpriteType = { 
 		name = "GFX_focus_hol_liberation"
 		texturefile = "gfx/interface/goals/focus_hol_liberation.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_focus_ban_communism"
-		texturefile = "gfx/interface/goals/focus_ban_communism.dds"
 	}
 
 }
