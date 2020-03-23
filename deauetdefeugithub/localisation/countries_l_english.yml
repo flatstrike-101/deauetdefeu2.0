@@ -2518,3 +2518,12 @@ ISS_communism_ADJ:0 "Arabian"
 ISS_absolutism_ADJ:0 "Arabian"
 ISS_absolutism:0 "Kingdom of Arabia"
 ISS_absolutism_DEF:0 "Kingdom of Arabia"
+
+#Technocracy
+
+ USA_technocracy:0  "Technocratic States"
+ USA_technocracy_ADJ:0 "American"
+ USA_technocracy_DEF:0 "Technocratic States of America"
+ BOL_technocracy:0 "Technocratic New Spain"
+ BOL_technocracy_ADJ:0 "New Spanish"
+ BOL_technocracy_DEF:0 "Technocratic New Spain"

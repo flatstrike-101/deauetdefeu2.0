@@ -764,3 +764,6 @@ SOV_ussr_communism_DEF:0 "the Union of Soviet Socialist Republics"
 
 USA_technate:0 "Technate"
 USA_technate_DEF:0 "the North American Technate "
+
+BOL_technate:0 "SAT"
+BOL_technate_DEF:0 "the South American Technate "
