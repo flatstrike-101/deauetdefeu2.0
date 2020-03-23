@@ -639,3 +639,16 @@
  progressive_desc:0 "Support for or advocacy of social reform."
  millitary:0 "Militarism"
  millitary_desc:0 "The belief or desire of a government or people that a country should maintain a strong military capability and be prepared to use it aggressively to defend or promote national interests."
+ 
+ #############################################Technocracy
+ 
+ technocracy:0 "Technocratic"
+ technocracy_noun:0 "Technocracy"
+ technocracy_desc:0 "Technocratic Regime"
+ USA_technocracy:0  "Technocratic States"
+ USA_technocracy_ADJ:0 "American"
+ USA_technocracy_DEF:0 "Technocratic States of America"
+ FACTION_NAME_TECHNOCRATIC_1:0 "Technocratic League"
+ FACTION_NAME_TECHNOCRATIC_2:0 "Greater Technate"
+ technocracy_drift:0 "Daily Technocracy Support"
+ 

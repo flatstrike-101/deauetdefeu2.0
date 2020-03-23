@@ -1,0 +1,643 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+### search_filters = {FOCUS_FILTER_USA_CONGRESS}
+
+focus_tree = {
+	id = usa_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = USA
+		}
+		
+		modifier = {
+			add = 10
+			original_tag = USA
+		}
+	}
+	continuous_focus_position = { x = 50 y = 1600 }
+	default = no
+
+	focus = {
+		id = USA_preparations
+		icon = GFX_focus_generic_self_management
+		
+		x = 0
+		y = 0
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_political_power = 125
+		}
+	}
+
+	focus = {
+		id = USA_the_coup
+		icon = GFX_focus_generic_military_mission
+		prerequisite = {
+			focus = USA_preparations
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_preparations
+		cost = 20
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			create_country_leader = {
+				name = "Federal Commission"
+				desc = "POLITICS_FEDERAL_COMMISSION_DESC"
+				picture = "Portrait_USA_Federal_Commission.dds"
+				expire = "1999.3.1"
+				ideology = technocracy_ideology
+				traits = {
+					
+				}
+			}
+			set_politics = {
+					ruling_party = technocracy
+					elections_allowed = no
+			}
+			add_ideas = {
+				technocratic_country
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_reunification
+		icon = GFX_goal_anschluss
+		prerequisite = {
+			focus = USA_the_coup
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_the_coup
+		cost = 20
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			annex_country = {
+				target = TEX
+				transfer_troops = yes
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_texas_integration
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = {
+			focus = USA_reunification
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_reunification
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			every_owned_state = {
+				if = {
+					limit = {
+						is_core_of = TEX
+					}
+					add_core_of = USA
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_war_mexico
+		icon = GFX_goal_generic_major_war
+		prerequisite = {
+			focus = USA_texas_integration
+		}
+		
+		x = 0
+		y = 2
+		relative_position_id = USA_texas_integration
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = MEX
+			}
+		}
+	}
+	focus = {
+		id = USA_prep_war_canada
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = {
+			focus = USA_texas_integration
+		}
+		
+		x = 2
+		y = 1
+		relative_position_id = USA_texas_integration
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			end_puppet = CAN
+		}
+	}
+	focus = {
+		id = USA_prep_war_new_france
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = {
+			focus = USA_texas_integration
+		}
+		
+		x = -2
+		y = 1
+		relative_position_id = USA_texas_integration
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			end_puppet = BCA
+		}
+	}
+	
+	focus = {
+		id = USA_war_canada
+		icon = GFX_goal_generic_major_war
+		prerequisite = {
+			focus = USA_prep_war_canada
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_prep_war_canada
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = CAN
+			}
+		}
+	}
+	focus = {
+		id = USA_war_new_france
+		icon = GFX_goal_generic_major_war
+		prerequisite = {
+			focus = USA_prep_war_new_france
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_prep_war_new_france
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = BCA
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_mexico_integration
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = {
+			focus = USA_war_mexico
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_war_mexico
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			owns_state = 484
+			owns_state = 483
+			owns_state = 482
+			owns_state = 480
+			owns_state = 479
+			owns_state = 481
+			owns_state = 478
+			owns_state = 277
+			owns_state = 485
+			owns_state = 477
+			owns_state = 476
+			owns_state = 475
+			owns_state = 474
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_state_core = 484
+			add_state_core = 483
+			add_state_core = 482
+			add_state_core = 480
+			add_state_core = 479
+			add_state_core = 481
+			add_state_core = 478
+			add_state_core = 277
+			add_state_core = 485
+			add_state_core = 477
+			add_state_core = 476
+			add_state_core = 475
+			add_state_core = 474
+		}
+	}
+	focus = {
+		id = USA_canada_integration
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = {
+			focus = USA_war_canada
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_war_canada
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			owns_state = 472
+			owns_state = 473
+			owns_state = 740
+			owns_state = 739
+			owns_state = 470
+			owns_state = 469
+			owns_state = 467
+			owns_state = 682
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_state_core = 472
+			add_state_core = 473
+			add_state_core = 740
+			add_state_core = 739
+			add_state_core = 470
+			add_state_core = 469
+			add_state_core = 467
+			add_state_core = 682
+		}
+	}
+	focus = {
+		id = USA_new_france_integration
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = {
+			focus = USA_war_new_france
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_war_new_france
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			owns_state = 332
+			owns_state = 466
+			owns_state = 465
+			owns_state = 468
+			owns_state = 276
+			owns_state = 464
+			owns_state = 331
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_state_core = 332
+			add_state_core = 466
+			add_state_core = 465
+			add_state_core = 468
+			add_state_core = 276
+			add_state_core = 464
+			add_state_core = 331
+		}
+	}
+	focus = {
+		id = USA_annex_central_america
+		icon = GFX_goal_anschluss
+		prerequisite = {
+			focus = USA_canada_integration
+		}
+		prerequisite = {
+			focus = USA_new_france_integration
+		}
+		prerequisite = {
+			focus = USA_mexico_integration
+		}
+		
+		x = 0
+		y = 5
+		relative_position_id = USA_reunification
+		cost = 20
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_state_core = 313
+			add_state_core = 311
+			add_state_core = 312
+			add_state_core = 314
+			add_state_core = 317
+			add_state_core = 316
+			add_state_core = 304
+			transfer_state = 313
+			transfer_state = 311
+			transfer_state = 312
+			transfer_state = 314
+			transfer_state = 317
+			transfer_state = 316
+			transfer_state = 304
+		}
+	}
+	focus = {
+		id = USA_annex_caribean
+		icon = GFX_goal_anschluss
+		prerequisite = {
+			focus = USA_annex_central_america
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_annex_central_america
+		cost = 20
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_state_core = 315
+			add_state_core = 689
+			add_state_core = 318
+			add_state_core = 319
+			add_state_core = 693
+			add_state_core = 690
+			transfer_state = 315
+			transfer_state = 689
+			transfer_state = 318
+			transfer_state = 319
+			transfer_state = 693
+			transfer_state = 690
+		}
+	}
+	focus = {
+		id = USA_technate_focus
+		icon = GFX_focus_generic_military_mission
+		prerequisite = {
+			focus = USA_annex_caribean
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_annex_caribean
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			set_cosmetic_tag = USA_technate
+			create_country_leader = {
+				name = "Federal Commission"
+				desc = "POLITICS_FEDERAL_COMMISSION_DESC"
+				picture = "Portrait_USA_technate_Federal_Commission.dds"
+				expire = "1999.3.1"
+				ideology = technocracy_ideology
+				traits = {
+					
+				}
+			}
+			remove_ideas = {
+				technocratic_country
+			}
+			add_ideas = {
+				technate_country
+			}
+		}
+	}
+	}
+}

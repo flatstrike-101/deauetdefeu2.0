@@ -105,7 +105,6 @@ if = {
 		mtg_transport = 1
 		improved_airplane_launcher = 1
 	}
-	add_ideas = MTG_naval_treaty_adherent
 }
 
 #Monroe Doctrine
@@ -285,10 +284,8 @@ set_popularities = {
 
 add_ideas = {
 	undisturbed_isolation
-	great_depression
 	disarmed_nation
 	free_trade
-	home_of_the_free
 }
 
 

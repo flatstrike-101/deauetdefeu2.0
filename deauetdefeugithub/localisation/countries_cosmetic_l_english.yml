@@ -758,4 +758,9 @@ ENG_GPE_fascism_DEF:0 "Mosley's Realm"
 ###USSR
 
 SOV_ussr_communism:0 "Soviet Union"
-SOV_ussr_communism_DEF:0 "Union of Soviet Socialist Republics"
+SOV_ussr_communism_DEF:0 "the Union of Soviet Socialist Republics"
+
+###Technocracy
+
+USA_technate:0 "Technate"
+USA_technate_DEF:0 "the North American Technate "

@@ -2627,8 +2627,13 @@
  anti_rascism_desc:0 "Anti-Rascist"
  
  ###Russia
-SOV_idea_social_and_economic_reform:0 "Social and Economic Reform"
-SOV_idea_social_and_economic_reform_desc:0 "Social and Economic Reform"
-SOV_idea_economic_reform:0 "New Economy Policy"
-SOV_idea_economic_reform_desc:0 "New Economy Policy"
+  SOV_idea_social_and_economic_reform:0 "Social and Economic Reform"
+ SOV_idea_social_and_economic_reform_desc:0 "Social and Economic Reform"
+ SOV_idea_economic_reform:0 "New Economy Policy"
+ SOV_idea_economic_reform_desc:0 "New Economy Policy"
  
+ ###Technocracy
+ 
+ technocratic_country:0 "Technocratic Nation"
+ technocratic_country_desc:0 ""
+ technate_country:0 "Technate"

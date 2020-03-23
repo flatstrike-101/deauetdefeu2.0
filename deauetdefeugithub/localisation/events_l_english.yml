@@ -3223,6 +3223,12 @@
  sov.1.a:0 "Leon Trotsky"
  sov.1.b:0 "Joseph Stalin"
 
+#USA
+
+ usa.101.t:0 "USA demands reunification!"
+ usa.101.d:0 ""
+ usa.101.a:0 "Accept"
+ usa.101.b:0 "Refuse"
 
 #mongolia
 

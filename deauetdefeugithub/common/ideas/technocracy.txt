@@ -1,0 +1,44 @@
+ideas = {
+	country = {
+		technocratic_country = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = technocracy
+			}
+			
+			modifier = {
+				technocracy_drift = 0.03
+				industrial_capacity_factory = 0.3
+				industrial_capacity_dockyard = 0.2
+				offence = -0.2
+				defence = -0.1
+				justify_war_goal_time = 0.8
+			}
+		}
+		technate_country = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = technocracy
+			}
+			
+			modifier = {
+				technocracy_drift = 0.1
+				industrial_capacity_factory = 0.6
+				industrial_capacity_dockyard = 0.4
+				offence = -0.5
+				defence = -0.2
+				justify_war_goal_time = 1
+			}
+		}
+	}
+}

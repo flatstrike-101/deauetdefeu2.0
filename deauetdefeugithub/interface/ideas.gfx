@@ -4030,5 +4030,12 @@ spriteTypes = {
 		name = "GFX_the_people_gpe"
 		texturefile = "gfx/interface/ideas/generic_pp_unity_bonus.dds"
 	}
-
+	spriteType = {
+		name = "GFX_idea_technocratic_country"
+		texturefile = "gfx/interface/ideas/idea_technocratic_nation.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_technate_country"
+		texturefile = "gfx/interface/ideas/idea_technocratic_nation.tga"
+	}
 }
