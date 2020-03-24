@@ -692,7 +692,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+			BOL = {
+				exists = yes
+			}
 		}
 		
 		bypass = {
@@ -728,7 +730,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_south_america_attack_chile
-		icon = goal_generic_attack_allies
+		icon = GFX_goal_generic_attack_allies
 		prerequisite = {
 			focus = USA_south_american_technate
 		}
@@ -743,7 +745,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+			BOL = {
+				is_puppet_of = USA
+			}
 		}
 		
 		bypass = {
@@ -765,7 +769,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_south_america_attack_deutsches_amerika
-		icon = goal_generic_attack_allies
+		icon = GFX_goal_generic_attack_allies
 		prerequisite = {
 			focus = USA_south_american_technate
 		}
@@ -780,7 +784,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+			BOL = {
+				is_puppet_of = USA
+			}
 		}
 		
 		bypass = {
@@ -797,7 +803,7 @@ focus_tree = {
 			}
 			BOL = {
 				declare_war_on = {
-					target = CHL
+					target = GSA
 					type = annex_everything
 				}
 			}
@@ -805,7 +811,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_south_america_attack_brazil
-		icon = goal_generic_attack_allies
+		icon = GFX_goal_generic_attack_allies
 		prerequisite = {
 			focus = USA_south_american_technate
 		}
@@ -820,7 +826,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+			BOL = {
+				is_puppet_of = USA
+			}
 		}
 		
 		bypass = {
@@ -845,7 +853,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_south_america_attack_paraguay
-		icon = goal_generic_attack_allies
+		icon = GFX_goal_generic_attack_allies
 		prerequisite = {
 			focus = USA_south_american_technate
 		}
@@ -860,7 +868,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+			BOL = {
+				is_puppet_of = USA
+			}
 		}
 		
 		bypass = {
@@ -882,7 +892,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_south_america_attack_argentina
-		icon = goal_generic_attack_allies
+		icon = GFX_goal_generic_attack_allies
 		prerequisite = {
 			focus = USA_south_american_technate
 		}
@@ -897,7 +907,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+			BOL = {
+				is_puppet_of = USA
+			}
 		}
 		
 		bypass = {
@@ -919,7 +931,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_south_america_attack_southern_argentina
-		icon = goal_generic_attack_allies
+		icon = GFX_goal_generic_attack_allies
 		prerequisite = {
 			focus = USA_south_america_attack_argentina
 			focus = USA_south_america_attack_chile
@@ -935,7 +947,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+			BOL = {
+				is_puppet_of = USA
+			}
 		}
 		
 		bypass = {
@@ -957,7 +971,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_south_america_attack_uruguay
-		icon = goal_generic_attack_allies
+		icon = GFX_goal_generic_attack_allies
 		prerequisite = {
 			focus = USA_south_america_attack_brazil
 			focus = USA_south_america_attack_argentina
@@ -973,7 +987,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+			BOL = {
+				is_puppet_of = USA
+			}
 		}
 		
 		bypass = {
@@ -995,7 +1011,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_south_america_technate_focus
-		icon = goal_generic_attack_allies
+		icon = GFX_focus_generic_military_mission
 		prerequisite = {
 			focus = USA_south_america_attack_argentina
 		}
@@ -1028,7 +1044,45 @@ focus_tree = {
 		}
 
 		available = {
-			
+			BOL = {
+				is_puppet_of = USA
+				#German America
+				owns_state = 493
+				owns_state = 489
+				owns_state = 307
+				owns_state = 488
+				owns_state = 687
+				owns_state = 309
+				owns_state = 310
+				#Brazil
+				owns_state = 497
+				owns_state = 498
+				owns_state = 499
+				owns_state = 505
+				owns_state = 496
+				owns_state = 500
+				owns_state = 501
+				owns_state = 504
+				owns_state = 503
+				owns_state = 502
+				#Uruguay
+				owns_state = 300
+				#Paraguy
+				owns_state = 688
+				owns_state = 301
+				#Chile
+				owns_state = 506
+				owns_state = 279
+				owns_state = 507
+				#Argentina
+				owns_state = 508
+				owns_state = 509
+				owns_state = 510
+				owns_state = 511
+				owns_state = 278
+				#South Argentina
+				owns_state = 512
+			}
 		}
 		
 		bypass = {
@@ -1061,6 +1115,47 @@ focus_tree = {
 				every_owned_state = {
 					add_core_of = BOL
 				}
+			}
+		}
+	}
+	focus = {
+		id = USA_annex_lesser_antilles
+		icon = GFX_goal_anschluss
+		prerequisite = {
+			focus = USA_south_america_technate_focus
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_south_america_technate_focus
+		cost = 20
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			BOL = {
+				add_state_core = 694
+				add_state_core = 308
+				add_state_core = 692
+				add_state_core = 691
+				transfer_state = 694
+				transfer_state = 308
+				transfer_state = 692
+				transfer_state = 691
 			}
 		}
 	}
