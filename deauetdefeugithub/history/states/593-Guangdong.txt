@@ -10,10 +10,10 @@ state= {
 	}
 
 	history= {
-		owner = GGC
-		add_core_of = GGC
-		add_core_of = GGC
-		add_core_of = GGC
+		owner = CHI #GXC
+		add_core_of = CHI #GXC
+		add_core_of = CHI #CHI
+		add_core_of = CHI #PRC
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -26,7 +26,7 @@ state= {
 
 		1938.10.25 = {		
 			remove_core_of = GXC
-			owner = CHI
+			owner = CHI #CHI
 			JAP = {
 				set_province_controller = 1202
 				set_province_controller = 4050

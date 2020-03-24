@@ -3,8 +3,10 @@ state={
 	name="STATE_621"
 
 	history={
-		owner = PRC
-		add_core_of = PRC
+		owner = CHI #SHX
+		add_core_of = CHI #SHX
+		add_core_of = CHI #CHI
+		add_core_of = CHI #PRC
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -16,7 +18,7 @@ state={
 				level = 1
 
 			}
-			owner = PRC
+			owner = CHI #PRC
 			controller = MEN
 
 		}
