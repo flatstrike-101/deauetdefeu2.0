@@ -1,7 +1,7 @@
 state={
 	id=591
 	name="STATE_591"
-	manpower = 4350000
+	chipower = 4350000
 	state_category = town
 
 	history={
@@ -28,7 +28,7 @@ state={
 				limit = {
 					NOT = { has_dlc = "Waking the Tiger" }
 				}
-				remove_core_of = GXC
+				remove_core_of = chi
 				CHI = { transfer_state = PREV }
 			}
 			controller = JAP

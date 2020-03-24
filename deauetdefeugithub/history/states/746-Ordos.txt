@@ -9,8 +9,8 @@ state={
 	
 	history=
 	{
-		owner = PRC
-		add_core_of = PRC
+		owner = chi
+		add_core_of = chi
 		
 		buildings = {
 			infrastructure = 2
@@ -22,11 +22,11 @@ state={
 		
 		1939.1.1 = {
 			
-			owner = PRC
-			controller = MEN
+			owner = chi
+			controller = chi
 
 		}
 	}
-	manpower=500000
+	chipower=500000
 	buildings_max_level_factor=1.000
 }

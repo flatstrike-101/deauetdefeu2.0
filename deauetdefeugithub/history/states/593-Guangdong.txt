@@ -1,7 +1,7 @@
 state= {
 	id=593
 	name="STATE_593"
-	manpower = 12700000
+	chipower = 12700000
 	state_category = town
 	resources={
 		tungsten=15 # was: 20
@@ -25,7 +25,7 @@ state= {
 		}
 
 		1938.10.25 = {		
-			remove_core_of = GXC
+			remove_core_of = chi
 			owner = CHI
 			JAP = {
 				set_province_controller = 1202
