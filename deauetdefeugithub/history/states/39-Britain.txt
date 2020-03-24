@@ -2,7 +2,7 @@
 state={
 	id=39
 	name="STATE_39" # South Tyrol
-	chipower = 641650
+	manpower = 641650
 	
 	state_category = town
 	

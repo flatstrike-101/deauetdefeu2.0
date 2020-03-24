@@ -33,7 +33,7 @@ owner = ENG
 	provinces={
 		276 385 3217 3242 3329 3379 11257 
 	}
-	chipower=1198537
+	manpower=1198537
 	buildings_max_level_factor=1
 	state_category="city"
 	

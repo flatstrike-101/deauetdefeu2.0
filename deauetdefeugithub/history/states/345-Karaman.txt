@@ -2,7 +2,7 @@
 state={
 	id=345
 	name="STATE_345" # Mersin
-	chipower = 411798
+	manpower = 411798
 
 	state_category = rural
 

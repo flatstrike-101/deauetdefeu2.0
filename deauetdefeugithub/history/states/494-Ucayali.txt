@@ -2,7 +2,7 @@
 state={
 	id=494
 	name="STATE_494"
-	chipower = 735826
+	manpower = 735826
 	
 	state_category = rural
 	

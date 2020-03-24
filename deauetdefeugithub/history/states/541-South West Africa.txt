@@ -2,7 +2,7 @@
 state={
 	id=541
 	name="STATE_541"
-	chipower = 462000
+	manpower = 462000
 	
 	state_category = wasteland
 
