@@ -1629,4 +1629,48 @@ set_politics = {
 		add_stability = 0.25
 		}
 	}
+	
+	focus = {
+		id = GPE_promote_the_kkk
+		icon = GFX_focus_promote_kkk
+		prerequisite = { focus = GPE_nazi_empire }
+		x = 22
+		y = 12
+		cost = 20
+
+		available_if_capitulated = yes
+		completion_reward = {
+		GPE = {
+		add_political_power = 70
+		}
+		TEX = {
+		add_political_power = 70
+		add_stability = 0.2
+		}
+		}
+	}
+
+	focus = {
+		id = bring_the_kkk_to_power
+		icon = GFX_kkk
+		prerequisite = { focus = GPE_nazi_empire }
+		x = 22
+		y = 13
+		cost = 20
+
+		available_if_capitulated = yes
+		completion_reward = {
+		TEX = {
+		create_country_leader = {
+			name = "Hiram Wesley Evans"
+			desc = "POLITICS_MAO_ZEDONG_DESC"
+			picture = "kkk_leader_portrait.dds"
+			expire = "1965.1.1"
+			ideology = hitlerism
+			traits = {
+			}
+	    }
+		    }
+		}
+	}
 }
